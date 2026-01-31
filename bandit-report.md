@@ -105,3 +105,19 @@ Se navegó a la carpeta "inhere", la cual tiene 20 carpetas, cada una con varios
 
 ## Contraseña obtenida:
 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+# Bandit Level 7
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo dentro de un servidor.  
+**Comandos utilizados:**
+```bash
+find / -user bandit7
+find / -user bandit7 -group bandit6
+find / -user bandit7 -group bandit6 -size 33c
+cat /var/lib/dpkg/info/bandit7.password
+```
+## Explicación:
+Se usó el comando "find /" para buscar archivos dentro de todo el servidor. Se usó la opción "-user bandit7" para mostrar únicamente los archivos que pertenecen al usuario "bandit7". Luego, se agregó la opción "-group bandit6" para mostrar la lista de estos archivos que también pertenezcan al grupo "bandit6". Luego, se agregó la opción "-size 33c" para mostrar la lista de estos archivos que también tengan un tamaño de 33 bytes. Finalmente, se encontró en la lista el único archivo que no muestra el error "Permission denied" o "No such file or directory".
+
+## Contraseña obtenida:
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
