@@ -1,4 +1,4 @@
-## Bandit Level 0
+# Bandit Level 0
 **Objetivo:**
 Conectarme al juego usando SSH.  
 **Comandos utilizados:**
@@ -8,7 +8,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ## Explicación:
 Se utilizó el comando "ssh" con el usuario "bandit0", contraseña "bandit0", servidor "bandit.labs.overthewire.org" y con el puerto 2220 para conectarme con el servidor de OverTheWire.
 
-## Bandit Level 1
+# Bandit Level 1
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en el archivo readme.  
 **Comandos utilizados:**
@@ -22,7 +22,7 @@ Se listaron los archivos y se utilizó el comando "cat" para leer el texto conte
 ## Contraseña obtenida:
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-## Bandit Level 2
+# Bandit Level 2
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en el archivo -.  
 **Comandos utilizados:**
@@ -36,7 +36,7 @@ Se listaron los archivos y se utilizó el comando "cat" con el símbolo "<" que 
 ## Contraseña obtenida:
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
-## Bandit Level 3
+# Bandit Level 3
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en el archivo "--spaces in this filename--".  
 **Comandos utilizados:**
@@ -50,7 +50,7 @@ Igual al nivel anterior, se listaron los archivos y se utilizó el comando "cat"
 ## Contraseña obtenida:
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
-## Bandit Level 4
+# Bandit Level 4
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en el archivo oculto.  
 **Comandos utilizados:**
@@ -66,7 +66,7 @@ Se navegó a la carpeta "inhere", y se usó el comando "ls -a" para mostrar los 
 ## Contraseña obtenida:
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
-## Bandit Level 5
+# Bandit Level 5
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en uno de los 10 archivos.  
 **Comandos utilizados:**
