@@ -121,3 +121,18 @@ Se usó el comando "find /" para buscar archivos dentro de todo el servidor. Se 
 
 ## Contraseña obtenida:
 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+# Bandit Level 8
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo gigante de texto.  
+**Comandos utilizados:**
+```bash
+ls
+du -b
+cat data.txt | grep millionth
+```
+## Explicación:
+Se usó el comando "du -b" para ver el tamaño del archivo "data.txt", y se logró ver que tiene un tamaño de casi 4.19 MB, lo que significa que el archivo es demasiado grande. Se utilizó el comando "cat data.txt | grep millionth" para mostrar la línea de texto del archivo en la que se encuentra la palabra "millionth", ya que la constraseña está en la misma línea.
+
+## Contraseña obtenida:
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
