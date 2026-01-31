@@ -136,3 +136,19 @@ Se usó el comando "du -b" para ver el tamaño del archivo "data.txt", y se logr
 
 ## Contraseña obtenida:
 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+# Bandit Level 9
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con líneas repetidas.  
+**Comandos utilizados:**
+```bash
+ls
+uniq -u data.txt
+sort -u data.txt
+sort data.txt | uniq -u
+```
+## Explicación:
+Se usó el comando "uniq -u" para mostrar las líneas que aparecen solo una vez en el documento, pero esto no toma en cuenta líneas repetidas que están separadas. Después se usó el comando "sort -u" para ordenar las líneas de manera alfabética y no mostrar las líneas repetidas, pero esto todavía muestra las líneas que se repiten, aunque solo una vez. Finalmente se usó el comando "sort data.txt | uniq -u" para orderar alfabéticamente las líneas y mostrar únicamente las líneas que no se repiten, y en este caso es solo una línea.
+
+## Contraseña obtenida:
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
