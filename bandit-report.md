@@ -152,3 +152,18 @@ Se usó el comando "uniq -u" para mostrar las líneas que aparecen solo una vez 
 
 ## Contraseña obtenida:
 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+# Bandit Level 10
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con líneas con caracteres no imprimibles.  
+**Comandos utilizados:**
+```bash
+ls
+strings data.txt
+strings data.txt | grep ==
+```
+## Explicación:
+Se usó el comando "strings" para mostrar únicamente las líneas del documento con caracteres imprimibles. Aunque se puede ver fácilmente la contraseña únicamente con ese comando, se usó también el comando "strings data.txt | grep ==" para mostrar las líneas impresas previamente que también tengan "==" en la misma línea.
+
+## Contraseña obtenida:
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
