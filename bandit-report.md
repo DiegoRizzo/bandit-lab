@@ -49,3 +49,19 @@ Igual al nivel anterior, se listaron los archivos y se utilizó el comando "cat"
 
 ## Contraseña obtenida:
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+## Bandit Level 4
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en el archivo oculto.  
+**Comandos utilizados:**
+```bash
+ls
+cd inhere
+ls -a
+cat ...Hiding-From-You
+```
+## Explicación:
+Se navegó a la carpeta "inhere", y se usó el comando "ls -a" para mostrar los archivos ocultos dentro del directorio.
+
+## Contraseña obtenida:
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
