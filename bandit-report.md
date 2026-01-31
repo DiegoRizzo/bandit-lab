@@ -87,3 +87,21 @@ Se navegó a la carpeta "inhere", y se usó el comando "cat" con el símbolo "<"
 
 ## Contraseña obtenida:
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+# Bandit Level 6
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo oculto entre varios directorios.  
+**Comandos utilizados:**
+```bash
+ls
+cd inhere
+file */* | grep "ASCII"
+file */* | grep "ASCII" | grep -v "long"
+file */* | grep "ASCII" | grep -v "long" | du -ba
+du -ba | grep 1033
+```
+## Explicación:
+Se navegó a la carpeta "inhere", la cual tiene 20 carpetas, cada una con varios archivos. Se usó el comando "file */*" para mostrar los tipos de todos los archivos en todos los directorios. Se utilizó un pipe, denotado por el símbolo "|", para ejecutar un segundo comando sobre el output del primer comando. El comando "grep "ASCII"" se usó para mostrar únicamente los archivos que tienen "ASCII text" como tipo de archivo. Se utilizó otro pipe con el argumento "-v "long"" para mostrar únicamente los archivos que tienen "ASCII text" y que no tienen "with very long lines" como tipo de archivo. Luego, se agregó el comando "du -ba" para mostrar el tamaño de los archivos, pero ninguno tenía exactamente 1033 bytes. Finalmente, se utilizó el comando "du -ba | grep 1033" para hallar el tamaño de todos los archivos de todos los directorios, pero mostrar únicamente aquellos que tengan 1033 bytes, el cual solo fue 1 archivo.
+
+## Contraseña obtenida:
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
