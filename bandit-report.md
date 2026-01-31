@@ -24,7 +24,7 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 ## Bandit Level 2
 **Objetivo:**
-Encontrar la contraseña del siguiente nivel en el archivo -.
+Encontrar la contraseña del siguiente nivel en el archivo -.  
 **Comandos utilizados:**
 ```bash
 ls
@@ -35,3 +35,17 @@ Se listaron los archivos y se utilizó el comando "cat" con el símbolo "<" que 
 
 ## Contraseña obtenida:
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+## Bandit Level 3
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en el archivo "--spaces in this filename--".  
+**Comandos utilizados:**
+```bash
+ls
+cat < "--spaces in this filename--"
+```
+## Explicación:
+Igual al nivel anterior, se listaron los archivos y se utilizó el comando "cat" con el símbolo "<", pero se usaron también comillas dobles debido a que el nombre del archivo tiene espacios.
+
+## Contraseña obtenida:
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
