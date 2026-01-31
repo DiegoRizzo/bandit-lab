@@ -167,3 +167,17 @@ Se usó el comando "strings" para mostrar únicamente las líneas del documento 
 
 ## Contraseña obtenida:
 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+# Bandit Level 11
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo encodificado con base64.  
+**Comandos utilizados:**
+```bash
+ls
+base64 -d data.txt
+```
+## Explicación:
+Se usó el comando "base64" con la opción "-d" para decodificar el contenido del archivo "data.txt".
+
+## Contraseña obtenida:
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
