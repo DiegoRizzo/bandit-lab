@@ -65,3 +65,25 @@ Se navegó a la carpeta "inhere", y se usó el comando "ls -a" para mostrar los 
 
 ## Contraseña obtenida:
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+## Bandit Level 5
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en uno de los 10 archivos.  
+**Comandos utilizados:**
+```bash
+ls
+cd inhere
+cat < -file00
+cat < -file01
+cat < -file02
+cat < -file03
+cat < -file04
+cat < -file05
+cat < -file06
+cat < -file07
+```
+## Explicación:
+Se navegó a la carpeta "inhere", y se usó el comando "cat" con el símbolo "<", ya que los nombres de los archivos empiezan con un guión. Se revisó cada archivo en orden hasta encontrar la contraseña.
+
+## Contraseña obtenida:
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
